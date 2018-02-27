@@ -1,6 +1,5 @@
 html {
     height: 100%;
-    /* background-color: #edeeed; */
 }
 
 body {
@@ -9,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    grid-template-columns: 200px [name-start] 1fr 2fr [name-end] 200px; 
+    grid-template-columns: 200px [name-start] 1fr 4fr [name-end] 200px; 
     grid-template-rows: 100px [name-start] 1fr [name-end];
     grid-template-areas: 
                         ". h m ."
@@ -19,6 +18,9 @@ body {
 header {
     grid-area: h;
     background-image: url(concrete_wall.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main {
@@ -31,13 +33,11 @@ main {
     grid-row: 2 / 3;
     padding: 50px;
     margin-top: 180px;
-    text-indent: 3mm;
 }
 
 #name {
     grid-area: name;
     align-self: left;
-    /* border: 3px solid white; */
     position: absolute;
     top: 50px;
     left: 220px;
@@ -47,7 +47,7 @@ main {
 #last_name {
     font-family: 'Bungee Shade', cursive;
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 42px;
     letter-spacing: 0.7em;
     color: white;
     /* background-color: #d38435; */
@@ -71,7 +71,7 @@ li {
     font-family: 'Port Lligat Slab', serif;
     word-spacing: 0.5em;
     line-height: 1.5em;
-    font-size: 20px;
+    font-size: 26px;
 }
 
 #avatar {
@@ -99,5 +99,10 @@ li {
 
 #twitter:hover {
     background-color: #33CCFF;
+    border-radius: 100%;
+}
+
+#github:hover {
+    background-color: #000;
     border-radius: 100%;
 }
