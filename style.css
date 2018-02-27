@@ -4,6 +4,7 @@ html {
 }
 
 body {
+    background-image: url(brickwall.png);
     display: grid;
     margin: 0;
     padding: 0;
@@ -18,20 +19,18 @@ body {
 header {
     grid-area: h;
     background-image: url(concrete_wall.png);
-    box-shadow: -3px 0px 3px #333138;
 }
 
 main {
-    box-shadow: 3px 0px 3px #CED0CE, -3px 0px 3px #CED0CE;
     grid-area: m;
-    background-image: url(brickwall.png);
+    background-color: rgba(255, 255, 255, .4);
 }
 
 #text {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     padding: 50px;
-    margin-top: 100px;
+    margin-top: 180px;
     text-indent: 3mm;
 }
 
@@ -49,13 +48,13 @@ main {
     font-family: 'Bungee Shade', cursive;
     text-transform: uppercase;
     font-size: 35px;
-    letter-spacing: 1em;
+    letter-spacing: 0.7em;
     color: white;
     /* background-color: #d38435; */
-    background: linear-gradient(to right, rgb(211, 132, 53), rgba(223, 145, 68, 0.9));
+    background: linear-gradient(to right, rgb(211, 132, 53), rgba(238, 156, 74, 0.7));
     -webkit-transform: rotate(-10deg);
     margin: 10px 0px;
-    padding-left: 10px;
+    padding: 10px;
 }
 
 p {
@@ -90,12 +89,15 @@ li {
 
 #google:hover {
     background-color: #C63D2D;
+    border-radius: 100%;
 }
 
 #linkedin:hover {
     background-color: #4875B4;
+    border-radius: 100%;
 }
 
 #twitter:hover {
     background-color: #33CCFF;
+    border-radius: 100%;
 }
