@@ -7,4 +7,4 @@ this README
 __________________________________________
 
 A simple portfolio webpage using html and css.
-www.blagica.netlify.com
+https://blagica.netlify.com/
