@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: url(brickwall.png);
+    background-image: url(images/brickwall.png);
     display: grid;
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@ body {
 
 header {
     grid-area: h;
-    background-image: url(concrete_wall.png);
+    background-image: url(images/concrete_wall.png);
     display: flex;
     flex-direction: column;
     align-items: center;
